@@ -1193,8 +1193,10 @@ catchInt(int val)
 
 	intFlag = TRUE;
 
-	if (intCrlf)
+	if (intCrlf){
 		tryWrite(STDOUT, "\n", 1);
+		showPrompt();
+	}
 }
 
 
